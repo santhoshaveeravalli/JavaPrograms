@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+class Calculation {
+   int z;
+   Scanner sc = new Scanner(System.in);
+   
+	
+   public void addition(int x, int y) {
+	   System.out.println("Enter x &y Values:");
+	   x= sc.nextInt();
+	   y = sc.nextInt();
+      z = x + y;
+      System.out.println("The sum of the given numbers:"+z);
+   }
+	
+   public void Subtraction(int x, int y) {
+	   System.out.println("Enter x &y Values:");
+	   x= sc.nextInt();
+	   y = sc.nextInt();
+      z = x - y;
+      System.out.println("The difference between the given numbers:"+z);
+   }
+}
+
+public class Inheritance1 extends Calculation {
+   public void multiplication(int x, int y) {
+	   System.out.println("Enter x &y Values:");
+	   x= sc.nextInt();
+	   y = sc.nextInt();
+      z = x * y;
+      System.out.println("The product of the given numbers:"+z);
+   }
+	
+   public static void main(String args[]) {
+      int a = 20, b = 10;
+      Inheritance1 demo = new Inheritance1();
+      demo.addition(a, b);
+      demo.Subtraction(a, b);
+      demo.multiplication(a, b);
+   }
+}
