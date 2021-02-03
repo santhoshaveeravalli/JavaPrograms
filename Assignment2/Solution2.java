@@ -9,9 +9,8 @@ public class Solution2 {
 		System.out.println("Enter any string:");
 		s = in.nextLine();
 		char[] c = s.toCharArray();
-		for(i=c.length-1; i>=0; i--) {
-			rev = rev + c[i];
-		}
+		for(i=c.length; i>0; i--) {
+			rev = rev + c[i-1];		}
 	       if(s.equals(rev)) {
 	    	   System.out.println("Entered string is palindrome");
 	    	   System.out.println("True");
