@@ -1,7 +1,13 @@
+
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
+import java.util.PriorityQueue;
+import java.util.Queue;
 import java.util.Stack;
+import java.util.Vector;
 
 public class ListProgram {
 
@@ -47,5 +53,36 @@ public class ListProgram {
 	        s1.pop();
 	        System.out.println(s1);
 	        
+	       //Vector
+	       
+	        Vector<String> vs = new Vector<String>();
+	        vs.add("Florida");
+	        vs.add("Arkansas");
+	        vs.add("Texas");
+	        vs.add("Kansas");
+	        vs.add("Arizona");
+	       System.out.println("\nPrint Elements :");
+	       for (String s : vs){
+	          System.out.println(s);
+	       }
+	       List<String> ls = Collections.list(vs.elements());
+	       System.out.println("\nList Elements :");
+	       for (String st1 : ls){
+	          System.out.println(st1);
+	       }
+	       //Queue 
+	    	        
+	     Queue<String> pq = new PriorityQueue<String>(); 
+	     pq.add("arizona");
+	     pq.add("florida");
+	     pq.add("colorado");
+	     pq.add("texas");  	    
+	     System.out.println("\nList elements:" +pq);
+	     System.out.println("\nPrint Top Element in List:" +pq.peek()); 
+	     System.out.println("\nRemoving Top Element in list:" +pq.poll());   
+	     System.out.println("\nList elements:" +pq);
+	     System.out.println("\nTop Element in list after removing arizona: "+pq.peek()); 
+	   } 
+	    	
 	}
-}
+
