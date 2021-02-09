@@ -8,7 +8,7 @@ HashMap<String,Integer> hmcontacts = new HashMap<String,Integer>();
 	   hmcontacts.put(name,no);
    }
  
- public boolean searchNo(Integer no) {
+ boolean searchNo(Integer no) {
 	   Set<Entry<String,Integer>> s =  hmcontacts.entrySet(); 
 	   Iterator<Entry<String,Integer>> it = s.iterator();
 	   while (it.hasNext()) {
@@ -22,7 +22,7 @@ HashMap<String,Integer> hmcontacts = new HashMap<String,Integer>();
 	}
 	   
    
-  public boolean searchName(String name) {
+  boolean searchName(String name) {
    Set<Entry<String,Integer>> s =  hmcontacts.entrySet(); 
    Iterator<Entry<String,Integer>> it = s.iterator();
    while (it.hasNext()) {
@@ -35,7 +35,7 @@ HashMap<String,Integer> hmcontacts = new HashMap<String,Integer>();
 	return false;
 }
    
-  public void listAllContacts() {
+  void listAllContacts() {
 		Set<Entry<String,Integer>> s = hmcontacts.entrySet();
 		Iterator<Entry<String,Integer>> it = s.iterator();
 		while (it.hasNext()) {
@@ -43,5 +43,22 @@ HashMap<String,Integer> hmcontacts = new HashMap<String,Integer>();
 			System.out.println(m);
 		}
 	}
+  public static class Contacts {
+
+		public static void main(String[] args) {
+		ContactList CL = new ContactList();
+		CL.addContact("Hyderabad" , 957322778);
+		CL.addContact("Telugu" , 897822334);
+		CL.addContact("Andhra", 765645342);
+		CL.addContact("India", 678954321);
+		System.out.println("India: " + CL.searchName("India"));
+		System.out.println("678954321: " + CL.searchNo(678954321));
+		System.out.println("San: " + CL.searchName("San"));
+		System.out.println();
+		CL.listAllContacts();
+		}
+
+	}
+
    }
    
