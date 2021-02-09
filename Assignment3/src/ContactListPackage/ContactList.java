@@ -8,9 +8,9 @@ HashMap<String,Integer> hmcontacts = new HashMap<String,Integer>();
 	   hmcontacts.put(name,no);
    }
  
- boolean searchNo(Integer no) {
-	   Set<Entry<String,Integer>> set =  hmcontacts.entrySet(); 
-	   Iterator<Entry<String,Integer>> it = set.iterator();
+ public boolean searchNo(Integer no) {
+	   Set<Entry<String,Integer>> s =  hmcontacts.entrySet(); 
+	   Iterator<Entry<String,Integer>> it = s.iterator();
 	   while (it.hasNext()) {
 			Map.Entry<String,Integer> m = it.next();
 			if (m.getKey().equals(no)) {
@@ -22,9 +22,9 @@ HashMap<String,Integer> hmcontacts = new HashMap<String,Integer>();
 	}
 	   
    
-  boolean searchName(String name) {
-   Set<Entry<String,Integer>> set =  hmcontacts.entrySet(); 
-   Iterator<Entry<String,Integer>> it = set.iterator();
+  public boolean searchName(String name) {
+   Set<Entry<String,Integer>> s =  hmcontacts.entrySet(); 
+   Iterator<Entry<String,Integer>> it = s.iterator();
    while (it.hasNext()) {
 		Map.Entry<String,Integer> m = it.next();
 		if (m.getKey().equals(name)) {
@@ -35,9 +35,9 @@ HashMap<String,Integer> hmcontacts = new HashMap<String,Integer>();
 	return false;
 }
    
-  void listAllContacts() {
-		Set<Entry<String,Integer>> set = hmcontacts.entrySet();
-		Iterator<Entry<String,Integer>> it = set.iterator();
+  public void listAllContacts() {
+		Set<Entry<String,Integer>> s = hmcontacts.entrySet();
+		Iterator<Entry<String,Integer>> it = s.iterator();
 		while (it.hasNext()) {
 			Map.Entry<String,Integer> m = it.next();
 			System.out.println(m);

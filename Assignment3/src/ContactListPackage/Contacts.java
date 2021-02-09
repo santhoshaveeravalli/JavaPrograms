@@ -8,10 +8,9 @@ public class Contacts {
 	CL.addContact("Telugu" , 897822334);
 	CL.addContact("Andhra", 765645342);
 	CL.addContact("India", 678954321);
-	System.out.println("Nagendra: " + CL.searchName("India"));
+	System.out.println("India: " + CL.searchName("India"));
 	System.out.println("678954321: " + CL.searchNo(678954321));
 	System.out.println("San: " + CL.searchName("San"));
-	
 	System.out.println();
 	CL.listAllContacts();
 	}
