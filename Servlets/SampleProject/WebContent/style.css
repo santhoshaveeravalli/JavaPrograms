@@ -1,0 +1,15 @@
+
+body{
+	 background: linear-gradient(#33bbff, #ffccdd);
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+   	  background-size: cover;
+	  font-family: Garamond;
+      color: #1d2ce2;
+} 
+    
+	
+.tag{
+	text-decoration: none;
+	color:#1d2ce2;
+}
