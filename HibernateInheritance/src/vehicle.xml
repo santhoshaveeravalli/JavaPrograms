@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="com.ex.Vehicle" table="vehicle1">
+<id name="vehicle_id" />
+<discriminator column ="car_type" type="string" length="20"></discriminator>
+<property name="vehicle_name" />
+<property name="manufacturer" />
+<property name="price" />
+<subclass name="com.ex.SedanCar" discriminator-value="Sedan">
+<property name="sedancartype"></property></subclass>
+<subclass name="com.ex.SuvCar" discriminator-value="SUV">
+<property name="suvcartype"></property></subclass>
+</class>
+</hibernate-mapping>
