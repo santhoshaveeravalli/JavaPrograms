@@ -1,0 +1,41 @@
+<web-app>
+	<servlet>
+	<servlet-name>empregister</servlet-name>
+	<servlet-class>com.ex.employee_register</servlet-class>	
+	</servlet>
+
+	<servlet-mapping>
+	<servlet-name>empregister</servlet-name>
+	<url-pattern>/employeeregister</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>emplogin</servlet-name>
+	<servlet-class>com.ex.employee_login</servlet-class>	
+	</servlet>
+
+	<servlet-mapping>
+	<servlet-name>emplogin</servlet-name>
+	<url-pattern>/employeelogin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>mregister</servlet-name>
+	<servlet-class>com.ex.manager_register</servlet-class>	
+	</servlet>
+
+	<servlet-mapping>
+	<servlet-name>mregister</servlet-name>
+	<url-pattern>/managerregister</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>mlogin</servlet-name>
+	<servlet-class>com.ex.manager_login</servlet-class>	
+	</servlet>
+
+	<servlet-mapping>
+	<servlet-name>mlogin</servlet-name>
+	<url-pattern>/managerlogin</url-pattern>
+	</servlet-mapping>
+</web-app>

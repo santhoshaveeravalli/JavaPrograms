@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Leave Application</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<br>
+<center>
+<h1> Welcome to Employee Leave Application </h1>
+<br><br>
+<table cellpadding="20" width="1000"height="65">
+<tr>
+<td>
+<a class="tag" href="index.html">Home</a>
+</td>
+<td>
+<a class="tag" href="employee_register.html">Employee SignUp!</a>
+</td>
+<td>
+<a class="tag" href="employee_login.html">Employee SignIn</a>
+</td>
+<td>
+<a class="tag" href="manager_register.html">Manager Register</a>
+</td>
+<td>
+<a class="tag" href="manager_login.html">Manager Login</a>
+</td>
+</tr></table>
+<h3> Manager SignUp Page</h3>
+</center>
+
+<table cellpadding="5px" align="center">
+<form action= "./managerregister" method="post" align="center">
+<tr>
+<td>
+First Name:
+</td><td>
+<input type="text" name="name" placeholder="Enter first name"><br>
+</td>
+</tr>
+<!-- <tr>
+<td>
+Last Name:
+</td><td>
+<input type="text" name="lname" placeholder="Enter last name"><br>
+</td>
+</tr>-->
+<tr>
+<td>
+Email:
+</td>
+<td>
+<input type="text" name="email" placeholder="Enter email">
+</td>
+</tr>
+<tr>
+<td>
+Password:
+</td>
+<td>
+<input type="password" name="password" placeholder="Enter password">
+</td>
+</tr>
+<td>
+
+Department:
+</td>
+
+<td>
+<select name="department" required>
+<option value="FINANCE">Finance</option>
+<option value="HR">Human Resources</option>
+<option value="DEVELOPMENT">Development</option>
+<option value="MARKETING">Marketing</option>
+</select></td></tr>
+<tr>
+<td>
+Phone Number:
+</td>
+<td>
+<input type="text" name="phone" placeholder="Enter phone number">
+</td>
+</tr>
+<tr>
+<td>
+City:
+</td>
+<td>
+<input type="text" name="city" placeholder="Enter city"></td>
+</tr>
+<tr>
+<td align="center">
+<input class="button" type="submit" value="Sign Up" >
+</td>
+<td align="center" >
+<a class="tag1" href="employee_login.html" >Returing User? SignIn
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

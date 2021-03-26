@@ -1,0 +1,39 @@
+body{
+	background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   font-family:'Gilda Display';
+   color: #ffffff;
+    
+	}
+.tag{
+	 text-decoration:none;
+     font-size: 20px;
+     color: #ffffff;
+     font-weight: bold;
+  }
+  
+.tag1{
+	text-decoration:none;
+     font-size: 20px;
+     color: #ffffff;
+    
+}
+.tag1:hover{
+	opacity:0.55;
+}
+.button {
+  background-image: linear-gradient(to left,#245f74, #63b2ce);
+  color: white; 
+  border: none;
+  padding: 8px 20px;
+  margin: 4px 2px;
+  font-family: 'Gilda Display';
+  font-size: 15px;
+  border-radius: 15px;
+  }
+  
+ .button:hover {
+  opacity: 0.55;
+}
