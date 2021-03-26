@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+ <title>Hospital Management System</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+
+<body>
+    <!---Top Header--->
+    <section class="container-fluid" id="top-header">
+        <div class="container">
+            <ul class="d-flex">
+                <li>
+                    <a>Hospital Appointment Management System</a>
+                </li>
+                <li>
+                    <a href="index.html"> Home</a>
+                </li>
+                <li>
+                    <a href="login.html"> SignIn</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <form action="./register"  method="post" class="formcontainer">
+        First Name:<br>
+        <input type="text" name="fname" placeholder="Enter First Name" > <br/><br>
+         Last Name:<br>
+        <input type="text" name="lname" placeholder="Enter Last Name" > <br/><br> Email ID:<br>
+        <input type="text" name="email" placeholder="Username" ><br/> <br> Password: <br>
+        <input type="password" name="pass" placeholder="Password" ><br/><br> 
+        <!-- Confirm Password: <br>
+        <input type="password" name="pass" placeholder="Re-enter Password" /><br/> <br>-->
+        Gender :<br>
+        <input type="radio" name="gender"  value="male" checked > Male<br/>
+        <input type="radio" name="gender" value="female" > Female<br/><br>
+      <!--    Date of Birth:<br><input type="date" name="date"><br/>-->
+        <br>Phone:
+        <br>
+        <input type="number" name="mob" placeholder="Enter Phone Number" ><br> <br>City:
+        <br>
+        <input type="text" name="loc" placeholder="Enter City" ><br/>
+        <br><br> 
+        <input type="submit" class="submitbtn" value="SignUp!" >
+        <a href="login.html" class="new"> Returning User? SignIn</a>
+
+
+    </form>
+
+</body>
+
+</html>

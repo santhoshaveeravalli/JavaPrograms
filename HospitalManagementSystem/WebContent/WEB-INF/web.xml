@@ -1,0 +1,19 @@
+<web-app>
+<servlet>
+	<servlet-name>pregister</servlet-name>
+	<servlet-class>com.ex.PatientRegistration</servlet-class>
+</servlet>
+	<servlet-mapping>
+	<servlet-name>pregister</servlet-name>
+	<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	
+<servlet>
+	<servlet-name>plogin</servlet-name>
+	<servlet-class>com.ex.Login</servlet-class>
+</servlet>
+	<servlet-mapping>
+	<servlet-name>plogin</servlet-name>
+	<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+</web-app>

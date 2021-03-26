@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Hospital Management System</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!---Top Header--->
+    <section class="container-fluid" id="top-header">
+        <div class="container">
+            <ul class="d-flex">
+                <li>
+                    <a>Hospital Appointment Management System</a>
+                </li>
+                <li>
+                    <a href="index.html" class="homeicon">Home</a>
+                </li>
+                <li>
+                     <a href="login.html">SignIn</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+   <form method="post" action="./login" class="formcontainer">
+        Email ID:<br>
+        <input type="text" name="email" placeholder="Username" /><br/> <br> Password: <br><input type="password" name="pass" placeholder="Password" /><br/>
+        <br>
+        <input type="radio" name="radio1" value="patient" checked>Patient
+        <input type="radio" name="radio1" value="doctor" > Doctor
+        <br><br/>
+        <input type="submit" class="submitbtn" value="Sign In">
+        <a href="PatientRegistration.html" class="new">New User? SignUp</a>
+
+
+    </form>
+
+
+
+</body>
+</html>
