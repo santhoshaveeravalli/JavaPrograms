@@ -1,0 +1,12 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="com.ex.Student" table="student">
+<id name="sid" column="id"/>
+<property name="sname" column="sname"/>
+<property name="marks" column="marks"/>
+</class>
+
+</hibernate-mapping>
+
