@@ -1,0 +1,38 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="springframework.org/schema/util"
+   	   xmlns:tx="http://www.springframework.org/schema/tx"
+       
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/tx
+       https://www.springframework.org/tx/spring-tx.xsd
+       ">
+      
+<tx:annotation-driven transaction-manager="txnManagerBean" proxy-target-class="true"/>
+ 
+          
+<bean id="CustomerDAOBean" class="decodejava.CustomerDAO">
+<property name="jdbcTemplate" ref="jdbcTemplateBean"></property>
+</bean>
+
+
+<bean id="jdbcTemplateBean" class="org.springframework.jdbc.core.JdbcTemplate">
+<property name="dataSource" ref="dataSourceBean"></property>
+</bean>
+
+
+<bean id="txnManagerBean" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+<property name="dataSource" ref="dataSourceBean"></property>
+</bean>
+
+
+<bean id="dataSourceBean" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+<property name ="driverClassName" value ="com.mysql.cj.jdbc.Driver"/>
+<property name="url" value="jdbc:mysql://localhost:3306/jnit_practise"/>
+<property name="username" value="root"/>
+ <property name="password" value="root"/>
+</bean>
+
+
+</beans>
