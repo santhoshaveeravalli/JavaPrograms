@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+        
+    <beans>
+       <bean id ="connection" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        	<property name ="driverClassName" value ="com.mysql.cj.jdbc.Driver"/>
+        	<property name="url" value="jdbc:mysql://localhost:3306/jnit_practise"/>
+        	<property name="username" value="root"/>
+        	<property name="password" value="root"/>
+      </bean>
+  
+      <bean id ="jdbcObj" class="org.springframework.jdbc.core.JdbcTemplate">
+       	 <constructor-arg ref="connection">
+          
+       	 </constructor-arg>
+      </bean>
+      <bean id="javaObj" class="com.ex.SpringJdbc">
+       	 <property name="jdbcTemplate">
+       	 <ref bean="jdbcObj"></ref>
+         </property>
+      </bean>
+    </beans>
+        

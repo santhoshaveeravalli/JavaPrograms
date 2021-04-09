@@ -1,0 +1,11 @@
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+        
+ <beans>
+ 	<bean id="santhu" class="com.ex.Student">
+	 	<property name="sid" value="1032"/>
+	 	<property name="sname" value="Deepthi"/>
+	 	<property name="marks" value="90"/>
+ 	</bean>
+ </beans>
