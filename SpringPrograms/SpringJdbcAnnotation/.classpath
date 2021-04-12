@@ -6,6 +6,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/santh/Downloads/mysql-connector-java-8.0.20.jar"/>
 	<classpathentry kind="lib" path="C:/Users/santh/Desktop/Jnit/Spring Jar/commons-logging-1.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/santh/Desktop/Jnit/Spring Jar/spring-aop-5.0.0.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/santh/Desktop/Jnit/Spring Jar/spring-aspects-5.0.0.RELEASE.jar"/>
@@ -28,6 +29,5 @@
 	<classpathentry kind="lib" path="C:/Users/santh/Desktop/Jnit/Spring Jar/spring-webflux-5.0.0.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/santh/Desktop/Jnit/Spring Jar/spring-webmvc-5.0.0.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/santh/Desktop/Jnit/Spring Jar/spring-websocket-5.0.0.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/santh/Downloads/mysql-connector-java-8.0.20.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
