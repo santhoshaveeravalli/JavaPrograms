@@ -10,15 +10,15 @@ public class RowMapping implements RowMapper<Student> {
 	@Override
 	public Student mapRow(ResultSet res, int arg) throws SQLException {
 		Student s = new Student();
-		s.setId(res.getInt("id"));
-		s.setName(res.getString("name"));
-		s.setDept(res.getString("dept"));
+		s.setId(res.getInt("ID"));
+		s.setName(res.getString("NAME"));
+		s.setDept(res.getString("DEPT"));
 		
 		s.getId();
 		s.getName();
 		s.getDept();
 		
-		return null;
+		return s;
 	}
 
 }
