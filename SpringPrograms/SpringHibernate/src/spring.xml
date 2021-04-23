@@ -1,0 +1,38 @@
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+        
+<beans>
+	<bean id ="connection" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        	<property name ="driverClassName" value ="com.mysql.cj.jdbc.Driver"/>
+        	<property name="url" value="jdbc:mysql://localhost:3306/jnit"/>
+        	<property name="username" value="root"/>
+        	<property name="password" value="root"/>
+     </bean>
+  	 <bean id="mysession" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+  	 <property name="dataSource" ref="connection"></property>
+  	 <property name="mappingResources">
+  	 	<list>
+  	 		<value>employee.xml</value>
+  	 	</list>
+  	 </property>
+  	 <property name="hibernateProperties">
+  	 	<props>
+  	 		<prop key="hibernate.hbm2ddl.auto">create</prop>
+  	 		<prop key="hibernate.show_sql">true</prop>
+  	 		<prop key="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</prop>
+  	 	</props>	
+  	 </property>
+      	 </bean>
+ <bean id="htemplate" class="org.springframework.orm.hibernate5.HibernateTemplate">
+     	<property name="sessionFactory" ref="mysession"></property>
+     </bean>
+     <bean id="jObj" class="com.springhibernate.SpringHibernate">
+     <!--<property name="sessionFactory">
+     <ref bean="mysession"></ref>
+     </property>-->
+       	 <property name="hibernateTemplate" ref="htemplate"/>
+       <!--	 <ref bean="htemplate"></ref>    </property>-->     
+      </bean>
+ </beans>
+        

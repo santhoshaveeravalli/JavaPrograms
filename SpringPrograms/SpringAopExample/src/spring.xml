@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<bean id="savings" class="com.aop.Account"/>
+	<bean id="auth" class="com.aop.AuthenticationAspect"/>
+	<bean id="log" class="com.aop.LoggingAspect"/>
+	<bean id="proxyfb" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="proxyInterfaces" value="com.aop.Bank"></property>
+		<property name="interceptorNames">
+			<list>
+				<value>auth</value>
+				<value>log</value>
+			</list>
+		</property>
+		<property name="target">
+			<ref bean="savings"/>
+		</property>
+    </bean>
+</beans>
